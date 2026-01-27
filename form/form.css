@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Left section */
+
+.left-section {
+  position: relative;
+  width: 40vw;
+  min-width: 500px;
+  background-image: url("assets/tree.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo-bg {
+  margin-top: 15vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 100px;
+}
+
+.logo-text {
+  font-family: 'Cinzel', serif;
+  font-size: 6rem;
+  letter-spacing: 0.2rem;
+}
+
+/* right section */
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 4rem;
+
+  padding-top: 15vh;
+
+  background-color: rgb(244, 242, 242);
+}
+
+.right-section div {
+  padding-left: 3rem;
+  padding-right: 10vw;  
+}
+
+.top {
+  font-weight: 500;
+  font-size: 1.9rem;
+}
+
+.top p:last-child {
+  margin-top: 2rem;
+}
+
+.mid {
+  background-color: white;
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.mid form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.7rem 4.5rem; /* row gap, column gap */
+}
+
+.mid h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  padding-left: 3rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+    
+  font-family: inherit;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  color: black;
+}
+
+.form-field input {
+  border: 0.1px solid rgb(204, 204, 204);
+  width: 16rem;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  font-size: 1.1rem;
+}
+
+
+.bottom {
+  padding-left: 3rem;
+  padding-right: 10vw;
+}
+
+.create-btn {
+  background-color: #596D48;
+  color: white;
+  border: none;
+  padding: 0.9rem 3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.create-btn:hover {
+  background-color: #4e613f;
+}
+
+.login-text {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.login-text a {
+  color: #596D48;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+} 

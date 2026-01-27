@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+  
+  <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+  <div class="left-section">
+    <div class="logo-bg">
+      <img class="logo" src="assets/odin-lined.png" alt="">
+      <div class="logo-text">ODIN</div>
+    </div>
+</div>
+  </div>
+
+  <div class="right-section">
+    <div class="top">
+      <p>
+        This is not a real online service! You know you need something<br>
+        like this in your life to help you realize your deepest dreams.<br>
+        Sign up <i>now</i> to get started.
+      </p>
+
+      <p>You <i>know</i> you want to.</p>
+    </div>
+
+    <div class="mid">
+      <h2>Let's do this!</h2>
+
+      <form>
+        <div class="form-field">
+          <label for="fname">FIRST NAME</label>
+          <input id="fname" placeholder="Thor" required>
+        </div>
+
+        <div class="form-field">
+          <label for="lname">LAST NAME</label>
+          <input id="lname" placeholder="Odinson" required>
+        </div>
+
+        <div class="form-field">
+          <label for="mail">EMAIL</label>
+          <input id="mail" type="email" required>
+        </div>
+
+        <div class="form-field">
+          <label for="tel">PHONE NUMBER</label>
+          <input id="tel" type="tel" required>
+        </div>
+
+        <div class="form-field">
+          <label for="pass">PASSWORD</label>
+          <input id="pass" type="password" required>
+        </div>
+
+        <div class="form-field">
+          <label for="cpass">CONFIRM PASSWORD</label>
+          <input id="cpass" type="password" required>
+        </div>
+      </form>
+    </div>
+
+    <div class="bottom">
+      <button class="create-btn">Create Account</button>
+      <p class="login-text">
+        Already have an account? <a href="#">Log in</a>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
