@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Color variables */
+:root {
+  /* Brand / Primary */
+  --color-primary: #1992d4;        /* sidebar blue */
+  --color-primary-dark: #0f78b8;
+  --color-primary-light: #38bdf8;
+
+  /* Accent */
+  --color-accent: #fbbf24;         /* yellow project stripe */
+  --color-accent-soft: #fde68a;
+
+  /* Backgrounds */
+  --color-bg-main: #e2e8f0;         /* app background */
+  --color-bg-card: #ffffff;        /* cards */
+  --color-bg-sidebar: #1992d4;     /* sidebar */
+  --color-bg-header: #ffffff;
+
+  /* Text */
+  --color-text-primary: #0f172a;   /* headings */
+  --color-text-secondary: #475569; /* paragraphs */
+  --color-text-muted: #64748b;     /* subtle labels */
+  --color-text-inverse: #ffffff;   /* sidebar text */
+
+  /* Borders / Dividers */
+  --color-border: #cbd5e1;
+  --color-divider: #e5e7eb;
+
+  /* Icons */
+  --color-icon: #334155;
+  --color-icon-muted: #64748b;
+
+  /* Buttons */
+  --color-btn-primary: #1992d4;
+  --color-btn-primary-text: #ffffff;
+
+  /* Shadows */
+  --shadow-card: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Wrapper */
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  min-height: 100vh;
+  min-width: 280px;
+  background: var(--color-primary);
+  color: white;
+
+  padding: 1.4rem;
+  padding-right: 5rem;
+}
+
+.sidebar-head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+
+  background: var(--color-primary);
+  padding-bottom: 3rem;
+}
+
+.sidebar-head img {
+  width: 3rem;
+}
+
+.sidebar-head h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* sidebar links */
+.sidebar-links-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.sidebar-links img {
+  width: 1.5rem;
+}
+
+.sidebar-links h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+#utilities {
+  margin-top: 3rem;
+}
+
+
+/* Main content */
+.main-content {
+  display: flex;
+  flex: 1; /* take the remaining space */
+  background: var(--color-bg-main);
+}
