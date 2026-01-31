@@ -65,7 +65,7 @@ a {
 /* Sidebar */
 .sidebar {
   min-height: 100vh;
-  min-width: 280px;
+  min-width: 260px;
   background: var(--color-primary);
   color: white;
 
@@ -266,7 +266,7 @@ a {
 
 .content-cards-grid {
   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
@@ -278,13 +278,52 @@ a {
 }
 
 .content-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
   background: var(--color-bg-card);
+  border-radius: 0.8rem;
+
+  padding: 1.6rem 1.6rem 0.4rem 1.6rem;
   width: 100%;
 
-  padding: 2rem;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
 }
 
-.content-card
+.content-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0.5rem;
+  background: var(--color-accent);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.content-card h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.content-card p {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+
+.content-card-buttons {
+  display: flex;  
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5rem;
+
+  width: 100%;
+}
 
 .content-card-buttons img {
   width: 1.5rem;
